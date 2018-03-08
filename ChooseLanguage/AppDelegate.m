@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "NSBundle+Language.h"
+#import "ViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +18,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"myLanguage"] && ![[[NSUserDefaults standardUserDefaults] objectForKey:@"myLanguage"] isEqualToString:@""]) {
+        [NSBundle setLanguage:[[NSUserDefaults standardUserDefaults] objectForKey:@"myLanguage"]];
+    }
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = [[ViewController alloc] init];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

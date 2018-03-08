@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		A73A9EC12051288900A21693 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A73A9EC02051288900A21693 /* AppDelegate.m */; };
 		A73A9EC42051288900A21693 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A73A9EC32051288900A21693 /* ViewController.m */; };
-		A73A9EC72051288900A21693 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A73A9EC52051288900A21693 /* Main.storyboard */; };
 		A73A9EC92051288900A21693 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A73A9EC82051288900A21693 /* Assets.xcassets */; };
 		A73A9ECC2051288900A21693 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A73A9ECA2051288900A21693 /* LaunchScreen.storyboard */; };
 		A73A9ECF2051288900A21693 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A73A9ECE2051288900A21693 /* main.m */; };
 		A73A9ED92051288900A21693 /* ChooseLanguageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A73A9ED82051288900A21693 /* ChooseLanguageTests.m */; };
 		A73A9EE42051288900A21693 /* ChooseLanguageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A73A9EE32051288900A21693 /* ChooseLanguageUITests.m */; };
+		A73A9EF3205128BA00A21693 /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = A73A9EF2205128BA00A21693 /* NSBundle+Language.m */; };
+		A73A9EF62051296500A21693 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A73A9EF82051296500A21693 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +41,6 @@
 		A73A9EC02051288900A21693 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A73A9EC22051288900A21693 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A73A9EC32051288900A21693 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A73A9EC62051288900A21693 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A73A9EC82051288900A21693 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A73A9ECB2051288900A21693 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A73A9ECD2051288900A21693 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +51,12 @@
 		A73A9EDF2051288900A21693 /* ChooseLanguageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChooseLanguageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A73A9EE32051288900A21693 /* ChooseLanguageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChooseLanguageUITests.m; sourceTree = "<group>"; };
 		A73A9EE52051288900A21693 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A73A9EF1205128BA00A21693 /* NSBundle+Language.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Language.h"; sourceTree = "<group>"; };
+		A73A9EF2205128BA00A21693 /* NSBundle+Language.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Language.m"; sourceTree = "<group>"; };
+		A73A9EF72051296500A21693 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A73A9EFA20512A5400A21693 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		A73A9EFB20512A5400A21693 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		A73A9EFC20512EB100A21693 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,11 +111,13 @@
 				A73A9EC02051288900A21693 /* AppDelegate.m */,
 				A73A9EC22051288900A21693 /* ViewController.h */,
 				A73A9EC32051288900A21693 /* ViewController.m */,
-				A73A9EC52051288900A21693 /* Main.storyboard */,
 				A73A9EC82051288900A21693 /* Assets.xcassets */,
 				A73A9ECA2051288900A21693 /* LaunchScreen.storyboard */,
 				A73A9ECD2051288900A21693 /* Info.plist */,
 				A73A9ECE2051288900A21693 /* main.m */,
+				A73A9EF1205128BA00A21693 /* NSBundle+Language.h */,
+				A73A9EF2205128BA00A21693 /* NSBundle+Language.m */,
+				A73A9EF82051296500A21693 /* Localizable.strings */,
 			);
 			path = ChooseLanguage;
 			sourceTree = "<group>";
@@ -220,6 +228,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = A73A9EB32051288900A21693;
 			productRefGroup = A73A9EBD2051288900A21693 /* Products */;
@@ -239,8 +248,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A73A9ECC2051288900A21693 /* LaunchScreen.storyboard in Resources */,
+				A73A9EF62051296500A21693 /* Localizable.strings in Resources */,
 				A73A9EC92051288900A21693 /* Assets.xcassets in Resources */,
-				A73A9EC72051288900A21693 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A73A9EF3205128BA00A21693 /* NSBundle+Language.m in Sources */,
 				A73A9EC42051288900A21693 /* ViewController.m in Sources */,
 				A73A9ECF2051288900A21693 /* main.m in Sources */,
 				A73A9EC12051288900A21693 /* AppDelegate.m in Sources */,
@@ -303,20 +313,23 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A73A9EC52051288900A21693 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A73A9EC62051288900A21693 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A73A9ECA2051288900A21693 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A73A9ECB2051288900A21693 /* Base */,
+				A73A9EFA20512A5400A21693 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A73A9EF82051296500A21693 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A73A9EF72051296500A21693 /* en */,
+				A73A9EFB20512A5400A21693 /* zh-Hans */,
+				A73A9EFC20512EB100A21693 /* Base */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -326,6 +339,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -381,6 +395,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
